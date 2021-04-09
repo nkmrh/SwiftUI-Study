@@ -54,3 +54,4 @@ ForEach, List は指定した id の数だけ View を生成する。Id が重�
 Demo
 https://github.com/nkmrh/SwiftUI-Study/tree/main/swiftui-id/SameIDSameInstance
 
+React の key に似ている
