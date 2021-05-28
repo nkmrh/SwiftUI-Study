@@ -287,9 +287,16 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         VerticalBasicView()
             .previewDisplayName("VerticalBasicView")
-
+        VerticalIndentationView()
+            .previewDisplayName("VerticalIndentationView")
+        HorizontalBasic()
+            .previewDisplayName("HorizontalBasic")
+        HorizontalIndentationView()
+            .previewDisplayName("HorizontalIndentationView")
         AnimateAlignment()
             .previewDisplayName("AnimateAlignment")
+        Custom()
+            .previewDisplayName("Custom")
     }
 }
 
