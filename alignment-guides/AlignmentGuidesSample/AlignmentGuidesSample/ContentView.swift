@@ -25,31 +25,43 @@ struct VerticalBasicView: View {
         // これには2つの目的があります。
         // 1. どのalignmentGuides()が無視され、どのalignmentGuides()が無視されないかを指定します
         // 2. コンテナに含まれるビューのうち、明示的なガイドを持たないものに対しては、暗黙のアライメントガイドを定義します
-        VStack(alignment: .leading) {
-            HelloWorld().background(Color.red)
-                // Alignment Guide
-                // .leading: 子ビューのオフセットの基準となるアラインメント
-                // この値がContainer Alignmentパラメータと一致しない限り、このガイドはレイアウト時に無視されます。
-
-                // computeValue: オフセット値 CGFloat を返すクロージャ
-                // dimention: View のサイズ, Viewのコーディネートスペースに基づいたアラインメント
-                .alignmentGuide(.leading, computeValue: { dimension in
-                    // Implicit Alignment Value
-                    // これは数値で、変更するビューのガイドの位置を示します。d.width, d[.leading], d[.center] などの便利なプリセット値もありますが、最終的には数値を返します。これは、与えられたガイドに関連付けられたデフォルト（暗黙）の値です。
-                    dimension[HorizontalAlignment.center]
-                })
-            HelloWorld().background(Color.blue)
-                .alignmentGuide(.leading, computeValue: { dimension in
-                    // Explicit Alignment Value
-                    // これは数値で、変更するビューのガイドの位置を示します。これは、明示的な値（プログラムで定義された値）です。
-                    (dimension[explicit: .leading] ?? 100)
-                })
-
-            HelloWorld().background(Color.green)
-                .alignmentGuide(.leading, computeValue: { dimension in
-                    0
-                })
+//        VStack(alignment: .leading) {
+//            HelloWorld().background(Color.red)
+//                // Alignment Guide
+//                // .leading: 子ビューのオフセットの基準となるアラインメント
+//                // この値がContainer Alignmentパラメータと一致しない限り、このガイドはレイアウト時に無視されます。
+//
+//                // computeValue: オフセット値 CGFloat を返すクロージャ
+//                // dimention: View のサイズ, Viewのコーディネートスペースに基づいたアラインメント
+//                .alignmentGuide(.leading, computeValue: { dimension in
+//                    // Implicit Alignment Value
+//                    // これは数値で、変更するビューのガイドの位置を示します。d.width, d[.leading], d[.center] などの便利なプリセット値もありますが、最終的には数値を返します。これは、与えられたガイドに関連付けられたデフォルト（暗黙）の値です。
+////                    dimension[HorizontalAlignment.center]
+////                    dimension[.leading]
+//                    100
+//                })
+//            HelloWorld().background(Color.blue)
+//                .alignmentGuide(.leading, computeValue: { dimension in
+//                    // Explicit Alignment Value
+//                    // これは数値で、変更するビューのガイドの位置を示します。これは、明示的な値（プログラムで定義された値）です。
+////                    (dimension[explicit: .leading] ?? 100)
+//                    0
+//                })
+//
+//            HelloWorld().background(Color.green)
+//                .alignmentGuide(.leading, computeValue: { dimension in
+//                    0
+//                })
+//        }
+        VStack {
+            Rectangle()
+                .fill()
+                .foregroundColor(.red)
+                .frame(width: 100, height: 100, alignment: .trailing)
         }
+        .frame(width: 300, height: 300)
+        .foregroundColor(.blue)
+
     }
 }
 
@@ -231,43 +243,47 @@ struct AnimateAlignment: View {
 extension HorizontalAlignment {
     private enum CustomAlignment: AlignmentID {
         static func defaultValue(in d: ViewDimensions) -> CGFloat {
-            return d[HorizontalAlignment.center]
+            return 0//d[HorizontalAlignment.center]
         }
     }
     static let custom = HorizontalAlignment(CustomAlignment.self)
 }
 
 struct Custom: View {
-    @State var selectedIndex = 0
+    @State var alignment: HorizontalAlignment = .leading
 
     var body: some View {
         VStack(alignment: .custom) {
             Image(systemName: "arrow.down.circle.fill")
                 .alignmentGuide(.custom, computeValue: { d in
-                    d[HorizontalAlignment.center]
+//                    d[HorizontalAlignment.center]
+                    0
                 })
             HStack(alignment: .top) {
                 ForEach(0..<3) { index in
-                    if index == selectedIndex {
-                        HelloWorld().background(Color.red)
-                            .alignmentGuide(.custom, computeValue: { d in
-                                d[HorizontalAlignment.center]
-                            })
-                            .onTapGesture {
-                                withAnimation {
-                                    selectedIndex = index
+                    HelloWorld().background(Color.red)
+                        .onTapGesture {
+                            withAnimation {
+                                switch index {
+                                case 0:
+                                    alignment = .leading
+                                case 1:
+                                    alignment = .center
+                                case 2:
+                                    alignment = .trailing
+                                default:
+                                    alignment = .leading
                                 }
                             }
-                    } else {
-                        HelloWorld().background(Color.red)
-                            .onTapGesture {
-                                withAnimation {
-                                    selectedIndex = index
-                                }
-                            }
-                    }
+                        }
                 }
             }
+            .frame(width: 10)
+            .padding(0)
+            .alignmentGuide(.custom, computeValue: { d in
+                d[alignment]
+//                    0
+            })
         }
     }
 }
