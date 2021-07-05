@@ -35,34 +35,58 @@ struct ContentView: View {
 
     @Environment(\.presentationMode) var presentationMode
 
+    // NavigationLink の isActive を使わない
     var body: some View {
         List {
             ForEach(items.indices, id: \.self) { index in
                 NavigationLink(
-                    destination:
-                        ContentView()
-                        .navigationBarBackButtonHidden(true)
-                        .navigationBarItems(
-                            leading:
-                                Button(action: {
-                                    items[index].isActive = false
-                                }) {
-                                    Image(systemName: "circle")
-                                }
-                        )
-                    ,
-                    isActive: $items[index].isActive,
+                    destination: ContentView(),
                     label: {
-                        Button(action: {
-                            items[index].isActive = true
-                        }, label: {
-                            Text("\(items[index].name)")
-                        })
+                        Text("\(items[index].name)")
                     }
                 )
             }
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(
+            leading:
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "circle")
+                }
+        )
     }
+
+    // NavigationLink の isActive を使う
+//    var body: some View {
+//        List {
+//            ForEach(items.indices, id: \.self) { index in
+//                NavigationLink(
+//                    destination:
+//                        ContentView()
+//                        .navigationBarBackButtonHidden(true)
+//                        .navigationBarItems(
+//                            leading:
+//                                Button(action: {
+//                                    items[index].isActive = false
+//                                }) {
+//                                    Image(systemName: "circle")
+//                                }
+//                        )
+//                    ,
+//                    isActive: $items[index].isActive,
+//                    label: {
+//                        Button(action: {
+//                            items[index].isActive = true
+//                        }, label: {
+//                            Text("\(items[index].name)")
+//                        })
+//                    }
+//                )
+//            }
+//        }
+//    }
 
     // iOS 15
 //    var body: some View {
