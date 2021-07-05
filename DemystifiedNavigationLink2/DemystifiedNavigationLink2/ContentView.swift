@@ -35,62 +35,62 @@ struct ContentView: View {
 
     @Environment(\.presentationMode) var presentationMode
 
-//    var body: some View {
-//        List {
-//            ForEach(items.indices, id: \.self) { index in
-//                NavigationLink(
-//                    destination:
-//                        ContentView()
-//                        .navigationBarBackButtonHidden(true)
-//                        .navigationBarItems(
-//                            leading:
-//                                Button(action: {
-//                                    items[index].isActive = false
-//                                }) {
-//                                    Image(systemName: "circle")
-//                                }
-//                        )
-//                    ,
-//                    isActive: $items[index].isActive,
-//                    label: {
-//                        Button(action: {
-//                            items[index].isActive = true
-//                        }, label: {
-//                            Text("\(items[index].name)")
-//                        })
-//                    }
-//                )
-//            }
-//        }
-//    }
-
-    // iOS 15
     var body: some View {
-        List($items) { $item in
-            NavigationLink(
-                destination:
-                    ContentView()
-                    .navigationBarBackButtonHidden(true)
-                    .navigationBarItems(
-                        leading:
-                            Button(action: {
-                                item.isActive = false
-                            }) {
-                                Image(systemName: "circle")
-                            }
-                    )
-                ,
-                isActive: $item.isActive,
-                label: {
-                    Button(action: {
-                        item.isActive = true
-                    }, label: {
-                        Text("\(item.name)")
-                    })
-                }
-            )
+        List {
+            ForEach(items.indices, id: \.self) { index in
+                NavigationLink(
+                    destination:
+                        ContentView()
+                        .navigationBarBackButtonHidden(true)
+                        .navigationBarItems(
+                            leading:
+                                Button(action: {
+                                    items[index].isActive = false
+                                }) {
+                                    Image(systemName: "circle")
+                                }
+                        )
+                    ,
+                    isActive: $items[index].isActive,
+                    label: {
+                        Button(action: {
+                            items[index].isActive = true
+                        }, label: {
+                            Text("\(items[index].name)")
+                        })
+                    }
+                )
+            }
         }
     }
+
+    // iOS 15
+//    var body: some View {
+//        List($items) { $item in
+//            NavigationLink(
+//                destination:
+//                    ContentView()
+//                    .navigationBarBackButtonHidden(true)
+//                    .navigationBarItems(
+//                        leading:
+//                            Button(action: {
+//                                item.isActive = false
+//                            }) {
+//                                Image(systemName: "circle")
+//                            }
+//                    )
+//                ,
+//                isActive: $item.isActive,
+//                label: {
+//                    Button(action: {
+//                        item.isActive = true
+//                    }, label: {
+//                        Text("\(item.name)")
+//                    })
+//                }
+//            )
+//        }
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {
