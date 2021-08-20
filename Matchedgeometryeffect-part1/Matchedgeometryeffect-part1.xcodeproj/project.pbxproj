@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6475C23526C6383200D1F5C1 /* Matchedgeometryeffect_part1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475C23426C6383200D1F5C1 /* Matchedgeometryeffect_part1App.swift */; };
+		6475C23726C6383200D1F5C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475C23626C6383200D1F5C1 /* ContentView.swift */; };
+		6475C23926C6383900D1F5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6475C23826C6383900D1F5C1 /* Assets.xcassets */; };
+		6475C23C26C6383900D1F5C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6475C23B26C6383900D1F5C1 /* Preview Assets.xcassets */; };
+		6475C24626C6388C00D1F5C1 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475C24526C6388C00D1F5C1 /* ExampleView.swift */; };
+		6475C24826C63CDD00D1F5C1 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475C24726C63CDD00D1F5C1 /* Polygon.swift */; };
+		6475C24A26C6448B00D1F5C1 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475C24926C6448B00D1F5C1 /* HeroView.swift */; };
+		6475C24C26C649C900D1F5C1 /* hayata.png in Resources */ = {isa = PBXBuildFile; fileRef = 6475C24B26C649C800D1F5C1 /* hayata.png */; };
+		6475C24E26C64A9500D1F5C1 /* urutoraman.png in Resources */ = {isa = PBXBuildFile; fileRef = 6475C24D26C64A9500D1F5C1 /* urutoraman.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6475C23126C6383200D1F5C1 /* Matchedgeometryeffect-part1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matchedgeometryeffect-part1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6475C23426C6383200D1F5C1 /* Matchedgeometryeffect_part1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchedgeometryeffect_part1App.swift; sourceTree = "<group>"; };
+		6475C23626C6383200D1F5C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6475C23826C6383900D1F5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6475C23B26C6383900D1F5C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6475C23D26C6383900D1F5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6475C24526C6388C00D1F5C1 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		6475C24726C63CDD00D1F5C1 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		6475C24926C6448B00D1F5C1 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		6475C24B26C649C800D1F5C1 /* hayata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hayata.png; sourceTree = "<group>"; };
+		6475C24D26C64A9500D1F5C1 /* urutoraman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urutoraman.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6475C22E26C6383200D1F5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6475C22826C6383200D1F5C1 = {
+			isa = PBXGroup;
+			children = (
+				6475C23326C6383200D1F5C1 /* Matchedgeometryeffect-part1 */,
+				6475C23226C6383200D1F5C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6475C23226C6383200D1F5C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6475C23126C6383200D1F5C1 /* Matchedgeometryeffect-part1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6475C23326C6383200D1F5C1 /* Matchedgeometryeffect-part1 */ = {
+			isa = PBXGroup;
+			children = (
+				6475C23426C6383200D1F5C1 /* Matchedgeometryeffect_part1App.swift */,
+				6475C23626C6383200D1F5C1 /* ContentView.swift */,
+				6475C23826C6383900D1F5C1 /* Assets.xcassets */,
+				6475C23D26C6383900D1F5C1 /* Info.plist */,
+				6475C23A26C6383900D1F5C1 /* Preview Content */,
+				6475C24526C6388C00D1F5C1 /* ExampleView.swift */,
+				6475C24726C63CDD00D1F5C1 /* Polygon.swift */,
+				6475C24926C6448B00D1F5C1 /* HeroView.swift */,
+				6475C24B26C649C800D1F5C1 /* hayata.png */,
+				6475C24D26C64A9500D1F5C1 /* urutoraman.png */,
+			);
+			path = "Matchedgeometryeffect-part1";
+			sourceTree = "<group>";
+		};
+		6475C23A26C6383900D1F5C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6475C23B26C6383900D1F5C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6475C23026C6383200D1F5C1 /* Matchedgeometryeffect-part1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6475C24026C6383900D1F5C1 /* Build configuration list for PBXNativeTarget "Matchedgeometryeffect-part1" */;
+			buildPhases = (
+				6475C22D26C6383200D1F5C1 /* Sources */,
+				6475C22E26C6383200D1F5C1 /* Frameworks */,
+				6475C22F26C6383200D1F5C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Matchedgeometryeffect-part1";
+			productName = "Matchedgeometryeffect-part1";
+			productReference = 6475C23126C6383200D1F5C1 /* Matchedgeometryeffect-part1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6475C22926C6383200D1F5C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6475C23026C6383200D1F5C1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 6475C22C26C6383200D1F5C1 /* Build configuration list for PBXProject "Matchedgeometryeffect-part1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6475C22826C6383200D1F5C1;
+			productRefGroup = 6475C23226C6383200D1F5C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6475C23026C6383200D1F5C1 /* Matchedgeometryeffect-part1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6475C22F26C6383200D1F5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6475C24C26C649C900D1F5C1 /* hayata.png in Resources */,
+				6475C23C26C6383900D1F5C1 /* Preview Assets.xcassets in Resources */,
+				6475C24E26C64A9500D1F5C1 /* urutoraman.png in Resources */,
+				6475C23926C6383900D1F5C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6475C22D26C6383200D1F5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6475C24826C63CDD00D1F5C1 /* Polygon.swift in Sources */,
+				6475C23726C6383200D1F5C1 /* ContentView.swift in Sources */,
+				6475C23526C6383200D1F5C1 /* Matchedgeometryeffect_part1App.swift in Sources */,
+				6475C24626C6388C00D1F5C1 /* ExampleView.swift in Sources */,
+				6475C24A26C6448B00D1F5C1 /* HeroView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6475C23E26C6383900D1F5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6475C23F26C6383900D1F5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6475C24126C6383900D1F5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Matchedgeometryeffect-part1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Matchedgeometryeffect-part1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Matchedgeometryeffect-part1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6475C24226C6383900D1F5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Matchedgeometryeffect-part1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Matchedgeometryeffect-part1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Matchedgeometryeffect-part1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6475C22C26C6383200D1F5C1 /* Build configuration list for PBXProject "Matchedgeometryeffect-part1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6475C23E26C6383900D1F5C1 /* Debug */,
+				6475C23F26C6383900D1F5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6475C24026C6383900D1F5C1 /* Build configuration list for PBXNativeTarget "Matchedgeometryeffect-part1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6475C24126C6383900D1F5C1 /* Debug */,
+				6475C24226C6383900D1F5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6475C22926C6383200D1F5C1 /* Project object */;
+}
